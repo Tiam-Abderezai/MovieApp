@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movie Mania!</string>
+    <string name="no_movies">No Internet Connection</string>
+    <string name="internet_unavailable">No Connection</string>
+    <string name="settings_title">Sort Order Settings</string>
+    <string name="settings_key">sortOrder</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="settings">Settings</string>
+    <string name="settings_most_popular">Most Popular</string>
+    <string name="settings_highest_rated">Highest Rated</string>
+    <string name="poster_size">w500</string>
+    <string name="sortMostPopular">Most Popular Movies</string>
+    <string name="sortTopRated">Top Rated Movies</string>
+    <string name="sortFavorites">Favorite Movies</string>
+
+</resources>

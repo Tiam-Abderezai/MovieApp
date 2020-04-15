@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_input">
+        <item>@string/settings_most_popular</item>
+        <item>@string/settings_highest_rated</item>
+    </string-array>
+</resources>

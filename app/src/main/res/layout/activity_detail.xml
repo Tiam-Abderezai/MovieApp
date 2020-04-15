@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_detail_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/pb_movie_detail_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_detail_poster"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_detail_poster"
+                
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="0dp" />
+
+            <TextView
+                android:id="@+id/tv_detail_vote_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_detail_poster"
+                android:layout_marginTop="22dp" />
+
+            <TextView
+                android:id="@+id/tv_detail_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_vote_average" />
+
+            <TextView
+                android:id="@+id/tv_detail_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_release_date" />
+
+            <TextView
+                android:id="@+id/tv_detail_poster_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_overview"
+                android:layout_margin="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_detail_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_overview"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorAccent"
+                android:onClick="loadReviewActivity"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/tv_detail_trailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_detail_review" />
+
+            <ImageView
+                android:id="@+id/iv_favButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_favorite_false"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:layout_toRightOf="@id/iv_detail_poster"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trailers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_detail_trailer"
+                android:paddingStart="16dp"
+                android:paddingBottom="16dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:id="@+id/rv_reviews"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:paddingStart="16dp"-->
+            <!--                android:paddingBottom="16dp"-->
+            <!--                android:layout_below="@+id/tv_detail_review"-->
+            <!--                ></androidx.recyclerview.widget.RecyclerView>-->
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
